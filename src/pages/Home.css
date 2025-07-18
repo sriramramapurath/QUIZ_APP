@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a1930;
+  background-size: cover;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home-wrapper {
+  margin-top: px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f5f8ff; /* Light blue */
+  border-radius: 10px;
+}
+
+.play-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0d6efd; /* Royal blue */
+  margin-bottom: 0.2rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #0a1930;
+  margin-bottom: 2rem;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.question-card {
+  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: #ffffff;
+  border: 1px solid #cfe2ff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem auto;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.option-card {
+  cursor: pointer;
+  border: 1px solid #dee2e6;
+  background-color: #ffffff;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.option-card:hover {
+  background-color: #e9f3ff;
+}
+
+.option-card.selected {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.option-text {
+  font-size: 0.95rem;
+  color: black;
+  font-weight: 500;
+}
+button[type="submit"] {
+  background-color: #28a745 !important;
+  border: none;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838 !important;
+}
