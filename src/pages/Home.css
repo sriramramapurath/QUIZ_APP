@@ -1,19 +1,32 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0a1930;
+  background-color: #dadee4;
   background-size: cover;
   
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .home-wrapper {
-  margin-top: px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  margin-top: 50px; /* space from top/navbar */
+  padding: 20px 20px;
   text-align: center;
-  background-color: #f5f8ff; /* Light blue */
-  border-radius: 10px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add spacing between question cards */
+.question-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #d1d1d1;
+  margin-bottom: 30px; /* Slightly reduced spacing */
+  padding: 15px; 
+  border-radius: 16px;
+  margin-bottom: 40px; /* spacing between cards */
+  padding: 20px;
 }
 
 .play-title {
@@ -21,6 +34,7 @@ body {
   font-weight: bold;
   color: #0d6efd; /* Royal blue */
   margin-bottom: 0.2rem;
+  margin-top: 0;
 }
 
 .subtitle {
@@ -35,19 +49,13 @@ body {
   gap: 1.5rem;
 }
 
-.question-card {
-  background-color: rgba(255, 255, 255, 0.9); 
-  background-color: #ffffff;
-  border: 1px solid #cfe2ff;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: left;
-}
+
 
 .question-text {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: #0a1930;
 }
 
 .quiz-image {
@@ -99,4 +107,10 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #218838 !important;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
 }

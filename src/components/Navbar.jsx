@@ -9,12 +9,14 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-left">
         <img src={logo} alt="Logo" className="navbar-logo" />
+        
         <h2></h2>
       </div>
       <div className="nav-links">
+        
         <Link to="/">Home</Link>
-        <Link to="/add">Add Question</Link>
-        <Link to='/edit'>Edit Questions</Link>
+        <Link to="/add">Add </Link>
+        <Link to='/edit'>Edit </Link>
       </div>
     </nav>
   );
